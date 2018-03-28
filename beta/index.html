@@ -1,0 +1,903 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+  <title>Elements Culmyca 2018</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+   <script src="js/preload.js"></script>
+  <link rel="stylesheet" href="css/reveal.css">
+  <link rel="stylesheet" type="text/css" href="css/footer_style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="js/timer.js"></script>
+  <script src="js/reveal.js"></script>
+  <script src="js/slick.js"></script>
+  <script src="js/register.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.css">
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  <!-- for Google -->
+      <meta name="description" content="Annual Cultural Cum Technical Fest Of YMCA University Of Science And Technology, Faridabad" />
+      <meta name="keywords" content="college,fest,elements,culmyca,ymca,2018" />
+      <meta name="author" content="Manan" />
+      <meta name="copyright" content="vipinkhushu@hotmail.com" />
+      <meta name="application-name" content="Culmyca18" />
+      <!-- for Facebook -->
+      <meta property="og:url"                content="http://www.elementsculmyca.com/" />
+      <meta property="og:type"               content="article" />
+      <meta property="og:title"              content="Elements Culmyca 2018" />
+      <meta property="og:description"        content="Annual Cultural Cum Technical Fest Of YMCA University Of Science And Technology, Faridabad" />
+      <meta property="og:image"              content="http://www.elementsculmyca.com/images/logox.png" />
+      <meta property="og:site_name"          content="Culmyca18" />
+      <meta property="fb:app_id"             content="" />
+      <!-- for Twitter -->
+      <meta name="twitter:card" content="summary" />
+      <meta name="twitter:title" content="Elements Culmyca 2017" />
+      <meta name="twitter:description" content="Annual Cultural Cum Technical Fest Of YMCA University Of Science And Technology, Faridabad" />
+      <meta name="twitter:image" content="http://www.elementsculmyca.com/images/logox.png" />
+      <link rel="apple-touch-icon" href="images/logo.png">
+      <link rel="icon" href="images/logo.png">
+</head>
+<style>
+[data-simplebar] {
+  position: absolute !important;
+}
+</style>
+<body>
+<!-- the overlay 
+<div class="overlay">
+  Phone Landscape mode is not supported, please rotate your device to switch to Portrait mode.<br>
+  Thankx :)
+</div -->
+
+<!--preloader-->
+<div id="preloader">
+  <div id="status">
+  </div>
+</div>
+
+
+<!-- The nav bar -->
+<!--left navigation bar-->
+<ul class="nav navbar-nav navbar-left" >
+  <li onclick="goToSlide(1,0)"><a>About</a></li>
+  <li onclick="goToSlide(2,0)"><a>Events</a></li>
+  <li onclick="goToSlide(3,0)"><a>Register</a></li>
+  <div id="sidebar">
+    <li id="open-menu" onclick="toggleSidebar()"><i class="fa fa-bars"></i></li>
+  <ul>
+    <li onclick="goToSlide(1,0);toggleSidebar()"><a>About</a></li>
+    <li onclick="goToSlide(2,0);toggleSidebar()"><a>Events</a></li>
+    <li onclick="goToSlide(3,0);toggleSidebar()"><a>Register</a></li>
+    <li onclick="goToSlide(4,0);toggleSidebar()"><a>The Team</a></li>
+    <li onclick="goToSlide(5,0);toggleSidebar()"><a>Reach Us</a></li>
+    <li onclick="goToSlide(6,0);toggleSidebar()"><a>Sponsors</a></li>
+  </ul>
+
+ 
+</div>
+  
+</ul>
+<!--right navigation bar-->
+<ul class="nav navbar-nav navbar-right" >
+  <li onclick="goToSlide(4,0)"><a>The Team</a></li>
+  <li onclick="goToSlide(5,0)"><a>Reach Us</a></li>
+  <li onclick="goToSlide(6,0)"><a>Sponsors</a></li>
+</ul>
+
+<div class="reveal">
+  <div class="slides">
+    <!-- The Home -->
+    <section id="home" data-background-image='images/home.jpg'>
+      <!-- Layer 1 the icons -->
+      <div class="layer1">
+        <i class="fa fa-camera-retro fa-3x rb" aria-hidden="true"></i>
+        <i class="fa fa-code fa-3x lb" aria-hidden="true"></i>
+        <i class="fa fa-film fa-3x rb" aria-hidden="true"></i>
+        <p id="timer" class="lb">
+          <span id='pg'></span>
+        </p>
+      </div>
+
+      <!-- The social links -->
+      <div class="footer">
+        <a href="https://www.facebook.com/culmyca/" aria-hidden="true" target="blank"><i class="fa fa-facebook-square"></i></a>
+        <a href="https://www.instagram.com/elementsculmyca/" aria-hidden="true" target="blank"><i class="fa fa-instagram"></i></a>
+        <!--<a href="https://twitter.com/elementsculmyca" aria-hidden="true" target="blank"><i class="fa fa-twitter"></i></a>-->
+
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" data-background-image='images/about/wallpaper.jpg'>
+      <!-- about ymca -->
+      <section class="aboutymca" data-prevent-swipe>
+        <img class="imageymca" src="images/about/ay.jpg">
+        <p class="pymca">
+          <span style="font-weight: lighter;font-size: 32px;font-family: 'open sans'">About YMCA</span>
+          <br><br>The YMCA University of Science &amp; Technology, Faridabad erstwhile YMCA Institute Of Engineering, was established as a joint venture of the National Council of YMCAs of India, Govt of Haryana, and the Central Agencies for Development Aid, Bonn, Germany. It started as an Indo-German project with an aim to impart technical education to a developing India on German pattern. In December 2009 it was awarded the status of state university by the state government, thus making it an autonomous institution. YMCAUST has ben conferred “Best Upcoming University” award by Asociated Chamber of Commerce and Industry of India in Feb'14 under National Education Excellence Awards 2014. <br>
+        <br>YMCAUST has been awarded 'AAA+' by the Career360 Magazine in the year 2013, 2014 and 2015. YMCA University has also been accrediated with 'A' grade by NAAC. Our University has been mandated to affiliate 50+ B.Tech and B.Ed institutions.</p>
+      </section>
+
+      <!--about culmyca -->
+      <section class="aboutymca" data-prevent-swipe>
+        <img class="imageymca" src="images/about/ac.jpg">
+        <p class="pymca"><span style="font-weight: lighter;font-size: 32px;font-family: 'open sans'">About Culmyca</span>
+        <br><br>Elements Culmyca, the annual inter college cultech festival of YMCAUST has grown on to become one of the most popular college festivals of NCR.
+         With 1000+ participating students, 40+ participating colleges and an expected footfall of over 10000, ELEMENTS CULMYCA'18 guarentees to be a sure hit.
+        The upcoming 'Kalakaars' painting the entire college in the colours of their vivacity, the gaming freaks, the coding addicts.
+        They are all a part of the same institution, busy doing what they do best.
+        And when all these maestros get together to celebrate their individual talents they call that revelry : <strong>ELEMENTS CULMYCA</strong> : one of the most awaited events of the festival calender.
+        <br><br>
+        A time when the entire NCR comes to a standstill and all roads lead to just one destination:
+        YMCA University Of Science and Technology.</p>
+      </section>
+    </section>
+
+    <!--Events -->
+    <section id="events">
+
+      <section id="ehome" data-background-image='images/events/ehome.jpg' >
+        <div class="circle">
+          <div class="ctext">
+            &nbsp;&nbsp;&nbsp;Events
+          </div>
+        </div>
+        <div class="arcfirst1 arcs ar1" sid="it1">
+          <img src="images/icons/sae.png" class="inicon">
+          <span class="intext" id="it1">Automobiles</span>
+        </div>
+        <div class="arcfirst2 arcs ar1" sid="it2">
+          <img src="images/icons/srijan.png" class="inicon">
+          <span class="intext" id="it2">Arts</span>
+        </div>
+        <div class="arcfirst3 arcs ar1" sid="it3">
+          <img src="images/icons/microbird.png" class="inicon">
+          <span class="intext" id="it3">Coding</span>
+        </div>
+        <div class="arc21 arcs ar2" sid="it4">
+          <img src="images/icons/natraja.png" class="inicon">
+          <span class="intext" id="it4">Dance</span>
+        </div>
+        <div class="arc22 arcs ar2" sid="it5">
+          <img src="images/icons/vividha.png" class="inicon">
+          <span class="intext" id="it5">Drama</span>
+        </div>
+        <div class="arc23 arcs ar2" sid="it6">
+          <img src="images/icons/vivekanand.png" class="inicon">
+          <span class="intext" id="it6">Social-Cultural</span>
+        </div>
+        <div class="arcthree1 arcs ar3" sid="it7">
+          <img src="images/icons/tarannum.png" class="inicon">
+          <span class="intext" id="it7">Music</span>
+        </div>
+        <div class="arcthree2 arcs ar3" sid="it8">
+          <img src="images/icons/jhalakx.png" class="inicon">
+          <span class="intext" id="it8">Photography &amp; Designing</span>
+        </div>
+        <div class="arcthree3 arcs ar3" sid="it9">
+          <img src="images/icons/ieeefun.png" class="inicon">
+          <span class="intext" id="it9">Techno Fun</span>
+        </div>
+        <div class="arcthree4 arcs ar3" sid="it10">
+          <img src="images/icons/manan.png" class="inicon">
+          <span class="intext" id="it10">Electronics</span>
+        </div>
+        <div class="arc4one arcs ar4" sid="it11">
+          <img src="images/icons/ananya.png" class="inicon">
+          <span class="intext" id="it11">Literature</span>
+        </div>
+        <div class="arc4two arcs ar4" sid="it12">
+          <img src="images/icons/eklavya.png" class="inicon">
+          <span class="intext" id="it12">Fun Events</span>
+        </div>
+        <div class="arc4three arcs ar4" sid="it13">
+          <img src="images/icons/mechnext.png" class="inicon">
+          <span class="intext" id="it13">Mechanical</span>
+        </div>
+        <div class="arc4four arcs ar4" sid="it14">
+          <img src="images/icons/samarpan.png" class="inicon">
+          <span class="intext" id="it14">Electrical</span>
+        </div>
+      </section>
+
+      <section data-background-image='images/events/SAE.jpg' class="cat-section" data-prevent-swipe>
+        <div class="circle-cat">
+          <img src="images/icons/sae.png">
+        </div>
+        <div class="cat-right" id="cat-sae">
+        </div>
+        <div class="cat-head">
+          Automobiles
+        </div>
+      </section>
+      <section data-background-image='images/events/srijan.jpg' class="cat-section" data-prevent-swipe>
+      <div class="circle-cat">
+          <img src="images/icons/srijan.png">
+        </div>
+        <div class="cat-right" id="cat-srijan">
+         </div>
+        <div class="cat-head">
+          Arts
+        </div>
+        </section>
+      <section data-background-image='images/events/manan.jpg' class="cat-section" data-prevent-swipe>
+        <div class="circle-cat">
+          <img src="images/icons/manan.png">
+        </div>
+        <div class="cat-right" id='cat-manan'>
+         </div>
+        <div class="cat-head">
+          Coding
+        </div>
+      </section>
+      <section data-background-image='images/events/natraja.jpg' class="cat-section" data-prevent-swipe>
+         <div class="circle-cat">
+          <img src="images/icons/natraja.png">
+        </div>
+        <div class="cat-right" id="cat-natraja">
+         </div>
+        <div class="cat-head">
+          Dance
+        </div>
+      </section>
+      <section data-background-image='images/events/vividha.jpg' class="cat-section" data-prevent-swipe>
+         <div class="circle-cat">
+          <img src="images/icons/vividha.png">
+        </div>
+        <div class="cat-right" id="cat-vividha">
+         </div>
+        <div class="cat-head">
+          Drama
+        </div>
+      </section>
+      <section data-background-image='images/events/vivekanand.jpg' class="cat-section" data-prevent-swipe>
+         <div class="circle-cat">
+          <img src="images/icons/vivekanand.png">
+        </div>
+        <div class="cat-right" id="cat-vivekanand">
+         </div>
+        <div class="cat-head">
+          Social-Cultural
+        </div>
+      </section>
+      <section data-background-image='images/events/tarunnun.jpg' class="cat-section" data-prevent-swipe>
+          <div class="circle-cat">
+          <img src="images/icons/tarannum.png">
+        </div>
+        <div class="cat-right" id="cat-tarannum">
+         </div>
+        <div class="cat-head">
+        Music
+        </div>
+      </section>
+      <section data-background-image='images/events/jhalak.jpg' class="cat-section" data-prevent-swipe>
+          <div class="circle-cat">
+          <img src="images/icons/jhalakx.png">
+        </div>
+        <div class="cat-right" id="cat-jhalak">
+         </div>
+        <div class="cat-head">
+          Photography &amp; Designing
+        </div>
+      </section>
+      <section data-background-image='images/events/IEEE.jpg' class="cat-section" data-prevent-swipe>
+         <div class="circle-cat">
+          <img src="images/icons/ieeefun.png">
+        </div>
+        <div class="cat-right" id="cat-ieee">
+         </div>
+        <div class="cat-head">
+          Technofun
+        </div>
+      </section>
+      <section data-background-image='images/events/microbird.jpg' class="cat-section" data-prevent-swipe>
+        <div class="circle-cat">
+          <img src="images/icons/microbird.png">
+        </div>
+        <div class="cat-right" id="cat-microbird">
+         </div>
+        <div class="cat-head">
+        Electronics
+        </div>
+      </section>
+      <section data-background-image='images/events/ananya.jpg' class="cat-section" data-prevent-swipe>
+        <div class="circle-cat">
+          <img src="images/icons/ananya.png">
+        </div>
+        <div class="cat-right" id="cat-ananya">
+         </div>
+        <div class="cat-head">
+         Literature
+        </div>
+      </section>
+      <section data-background-image='images/events/eklavya.jpg' class="cat-section" data-prevent-swipe>
+        <div class="circle-cat">
+          <img src="images/icons/eklavya.png">
+        </div>
+        <div class="cat-right" id="cat-eklavya">
+         </div>
+        <div class="cat-head">
+         Fun Events
+        </div>
+      </section>
+      <section data-background-image='images/events/mechnext.jpg' class="cat-section" data-prevent-swipe>
+         <div class="circle-cat">
+          <img src="images/icons/mechnext.png">
+        </div>
+        <div class="cat-right" id="cat-mechnext">
+         </div>
+        <div class="cat-head">
+         Mechanical
+        </div>
+      </section>
+      <section data-background-image='images/events/samarpan.jpg' class="cat-section" data-prevent-swipe>
+        <div class="circle-cat">
+          <img src="images/icons/samarpan.png">
+        </div>
+        <div class="cat-right" id="cat-samarpan">
+         </div>
+        <div class="cat-head">
+        Electrical
+        </div>
+      </section>
+    </section>
+
+    <section id="register" data-background-image='images/register/wallpaper.jpg' data-prevent-swipe>
+        <div id="reg-right">
+         <br>
+          <form action="" onsubmit="return false;" id="regform">
+            <label>Phone No.</label><br>
+            <input type="number" maxlength="10" minlength="10" name="pnone" required id="phone"><br><br>
+            <label>Name(s)</label><br>
+            <input type="text" name="name" required id="name"><br><br>
+            <label>Email ID</label><br>
+            <input type="email" name="email" required id="email"><br><br>
+            <label>College/University</label><br>
+            <input type="text" name="college" required id="college"><br><br>
+            <label>For Event</label><br>
+            <select id="events-list">
+              <option value="010">Not selected</option>
+            </select><br><br>
+            <button type="button" class="registerbutton" onclick="register();">Register</button>
+          </form>
+        </div>
+        <div id="reg-left">
+          <img src="images/register/icon.png" style="width: 90%">
+        </div>
+    </section>
+   
+    <!-- team section -->
+    <section id="team" data-background-image="images/events/bg.jpg" data-prevent-swipe>
+     <div class="backstageborder">
+      <span class="backstage">The Backstage Heroes
+      </span>
+     </div>
+      <div id="team-div" data-simplebar>
+          <span style="font-size: 32px;"><br>The Website Team</span><br>
+          <div class="team-card">
+            <img src="images/team/t1.jpg">
+            Rishabh Mahajan
+            <div class="team-card-deptt">Geeky Web Dev
+            </div>
+          </div>
+          <div class="team-card">
+            <img src="images/team/t7.jpg">
+            Pranav Mahajan
+            <div class="team-card-deptt">Senior Web Dev
+            </div>
+          </div>
+          <div class="team-card">
+            <img src="images/team/t2.jpg">
+            Aakash Verma
+            <div class="team-card-deptt">Lead Web Developer
+            </div>
+          </div>
+          <div class="team-card">
+            <img src="images/team/t3.jpg">
+            Naman Sachdeva
+            <div class="team-card-deptt">Web Co-ordinator
+            </div>
+          </div>
+          <div class="team-card">
+            <img src="images/team/t4.jpg">
+            Mohit Yadav
+            <div class="team-card-deptt">Rockstar Web Dev
+            </div>
+          </div><br>
+          <div class="team-card">
+            <img src="images/team/t5.jpg">
+            Yugant Kachroo
+            <div class="team-card-deptt">New Web Ninja
+            </div>
+          </div>
+          <div class="team-card">
+            <img src="images/team/t6.jpg">
+            Darshita Aggarwal
+            <div class="team-card-deptt">Web Developer
+            </div>
+          </div><br>
+          <span style="font-size: 32px;">Organizing Committee</span><br>
+
+          <!-- Brixx -->
+          <div class="team-card">
+            <img src="images/team/a6.jpg">
+            Kartik Singla
+            <div class="team-card-deptt">Lead Web Designer
+            </div>
+          </div>
+          <div class="team-card">
+            <img src="images/team/a12.jpg">
+            Sourabh
+            <div class="team-card-deptt">Marketing
+            </div>
+          </div>
+          <div class="team-card">
+            <img src="images/team/a1.jpg">
+            Anuj Raj Sharma 
+            <div class="team-card-deptt">Marketing
+            </div>
+          </div>
+          <div class="team-card">
+            <img src="images/team/a11.jpg">
+            Sanjog Garv
+            <div class="team-card-deptt">Marketing
+            </div>
+          </div>
+          <div class="team-card">
+            <img src="images/team/a13.jpg">
+            Sushant
+            <div class="team-card-deptt">Marketing
+            </div>
+          </div>
+          <div class="team-card">
+            <img src="images/team/a9.jpg">
+            Randeep
+            <div class="team-card-deptt">Logistics
+            </div>
+          </div>
+          <div class="team-card">
+            <img src="images/team/a8.jpg">
+            Nishant Chetiwal
+            <div class="team-card-deptt">Logistics
+            </div>
+          </div>
+          <div class="team-card">
+            <img src="images/team/a4.jpg">
+            <span style="font-size: 20px;">Devinderpreet Bedi</span>
+            <div class="team-card-deptt">Logistics
+            </div>
+          </div>
+          <div class="team-card">
+            <img src="images/team/a7.jpg">
+            Kushal Sharma
+            <div class="team-card-deptt">Logistics
+            </div>
+          </div>
+          <div class="team-card">
+            <img src="images/team/a5.jpg">
+            Karan Handa
+            <div class="team-card-deptt">Logistics
+            </div>
+          </div>
+          <div class="team-card">
+            <img src="images/team/a14.jpg">
+            Sushant Gawri
+            <div class="team-card-deptt">Logistics
+            </div>
+          </div>
+          <div class="team-card">
+            <img src="images/team/a3.jpg">
+            Payal Malik
+            <div class="team-card-deptt">Hospitality
+            </div>
+          </div>  
+          <div class="team-card">
+            <img src="images/team/a2.jpg">
+            Kshitiz Manocha
+            <div class="team-card-deptt">Hospitality
+            </div>
+          </div>
+          <div class="team-card">
+            <img src="images/team/a10.jpg">
+            Sahil Kasana
+            <div class="team-card-deptt">Security
+            </div>
+          </div>
+          
+          
+          
+          
+          
+      </div>
+    </section>
+
+    <!-- google map for reach us page-->
+    <section id="reach-us" data-background-image='images/bg2.jpg' data-prevent-swipe>
+      <div id="reach-us-header">
+        <img src="images/ymca logo white.png" alt="ymca logo" id="reach-us-ymca-logo">
+        <h2 id="reach-us-heading">YMCA University of Science and Technology Faridabad</h2>
+        <h3 id="reach-us-subheading">[Established by Haryana State Legislative Act No. 21 of 2009
+        &amp; Recognized by UGC Act 1956 u/s 22 to Confer Degrees]</h3>
+      </div>
+
+      <div id="googleMap"></div>
+      <div id="reach-us-text-content">
+        NH-2, Sector 6, Mathura Road, <br/>
+        Near Escorts Mujesar Metro Station, <br/>
+        Faridabad, Haryana - 121006 <br/><br/>
+
+        Email: culmycaelements@gmail.com <br/>
+
+        <h4 id="reach-us-heading2">How To Reach Us:</h4>
+        By Air: Indira Gandhi International Airport : 45km <br/>
+        By Train: Old Faridabad Railway Station : 5km <br/>
+        By Bus: Ballabgarh : 3km <br/>
+        By Metro: Escorts Mujesar : 0.2km <br/><br/><br/>
+      </div>
+    </section>
+    <section id="sponsors" data-background-image='images/background.jpg'>
+      <p style="margin: auto;color:white;font-family: 'open sans'; font-weight: bold;text-shadow: 2.5px 3px black; letter-spacing: 0.9px;"><a href="https://ocul.in/proposalEC18" target="blank">Interested in sponsoring this extravaganza??   Click here to see the sponsorship proposal ! </a></p>
+    </section>
+ </div>
+</div>
+
+<!-- Layer 2 EC logo -->
+<img id="eclogo" src="images/logo.png" onclick="goToSlide(0,0)">
+
+<!-- The modals for every event category -->
+<div class="e-wosh">
+  <div class="e-wosh-close" onclick="closewosh()">
+    <i class="fa fa-arrow-circle-o-left"></i>
+  </div>
+  <div class="wosh-data">
+    <div class="cat-data-head cat-act-title">Event heading</div><br>
+    <div class="cat-data-desc-head">Description</div>
+    <div class="cat-data-desc cat-act-desc">
+      Lorem ipsum dolor sit amet, cum ex commodo adversarium, cu nam ullum placerat eloquentiam. Id mutat albucius oporteat per, nominavi mnesarchum eu his. Te eam saperet ornatus voluptaria, ei illum delenit mei. Officiis interpretaris per at. Eu discere scripserit vel, vim instructior definitiones no.
+    </div><br>
+    <div class="cat-data-desc-head">Rules</div>
+    <div class="cat-data-desc cat-act-rules">
+      Some sh*tty Rules.<br>
+      Te eam saperet ornatus voluptaria, ei illum delenit mei. Officiis interpretaris per at. Eu discere scripserit vel, vim instructior definitiones no.
+    </div>
+    <br><br>
+    <div class="cat-data-desc-head"><span class="cat-data-tandd"></span></span><span class="cat-data-desc-head">
+      <span class="cat-data-tandd cat-act-timing">00:00 AM</span></div>
+
+    <div class="cat-data-desc-head">Venue - <span class="cat-data-tandd cat-act-venue">Electrical Chowk</span></div><br>
+    <!--<div class="cat-data-desc-head"><span class="cat-data-tandd cat-act-prizes"></span></div><br>-->
+    <div class="myclass cat-data-desc-head" style="visibility: hidden;">Coordinators:<br></div>
+    <div class="cat-data-desc-head"><span class="cat-data-tandd cat-act-coordinators1"></span></div>
+    
+    <div class="cat-data-desc-head"><span class="cat-data-tandd cat-act-coordinators2"></span></div>
+    <br>
+ <button type="button" class="register-event" onclick="register_open()" id="register-btn" style="visibility: hidden;">Register</button>
+<!--     <button class="register" onclick="register_open()" id="register-btn">Register</button> -->
+
+  </div>
+</div>
+
+</body>
+<script>
+  
+</script>
+
+<!-- navbar navigation -->
+<script>
+  function goToSlide(x, y) {Reveal.slide(x, y);}
+</script>
+<script src="js/pre.js"></script>
+<script>
+Reveal.initialize({
+  width: "100%",
+  height: "100%",
+  margin: 0,
+  minScale: 1,
+  maxScale: 1,
+  controlsBackArrows: 'visible',
+  controlsLayout: 'edges',
+  overview: false,
+});
+var upactivate = 0;
+// Start modifications
+Reveal.addEventListener( 'slidechanged', function( event ) {
+  var curs = Reveal.getState();
+  var hors = curs.indexh;
+  if(Reveal.isFirstSlide())
+  {
+      setTimeout(function(){
+        $('#eclogo').css({
+          'top' : '50%'
+        });
+        setTimeout(function(){
+          $("#eclogo").css('transform', 'translate(-50%,-50%) scale(1)');
+        },400)
+      },500)
+      $("body").off('mousemove');
+      // The parallax
+      if ($(window).width() > 600)
+      {
+        var count = 0;
+        $("body").mousemove(function( event ) {
+          if(count%3 != 0)
+          {
+            count++;
+            return 0;
+          }
+          count++;
+          var top  = $(window).scrollTop();
+          var parX = event.pageX/100;
+          var parY = event.pageY/100;
+          $("#eclogo").css({
+            'transform': 'translate('+(-(parX + 50))+'%,'+(-(parY + 50)) +'%)'
+          });
+          $(".layer1 > *").css({
+            'transform': 'translate(-'+parX*2+'%,-'+parY*2+'%)'
+          });
+        })
+      } else
+      {
+        var count = 0;
+        window.removeEventListener('deviceorientation', deviceOrientation);
+        if (window.DeviceOrientationEvent)
+        {
+          window.addEventListener("deviceorientation", deviceOrientation)
+        }
+      }
+  } else if (hors == 2) {
+    $("body").off('mousemove');
+    window.removeEventListener('deviceorientation', deviceOrientation);
+    // The parallax
+      var count = 0;
+      if ($(window).width() > 600)
+      {
+        $("body").mousemove(function( event ) {
+          if(count%3 != 0)
+          {
+            count++;
+            return 0;
+          }
+          count++;
+          var top  = $(window).scrollTop();
+          var parX = event.pageX/100;
+          var parY = event.pageY/100;
+          $("#eclogo").css({
+            'transform': 'translate('+(-(parX + 40))+'%,'+(-(parY + 45)) +'%) scale(.4)'
+          });
+          $(".ar1").css({
+            'transform': 'translate('+(-(parX*3 + 50))+'%,'+(-(parY*3 + 50)) +'%) scale(1)'
+          });
+          $(".ar2").css({
+            'transform': 'translate('+(-(parX*2 + 50))+'%,'+(-(parY*2 + 50)) +'%) scale(1)'
+          });
+          $(".ar3").css({
+            'transform': 'translate('+(-(parX*1.5 + 50))+'%,'+(-(parY*1.5 + 50)) +'%) scale(1)'
+          });
+          $(".ar4").css({
+            'transform': 'translate('+(-(parX + 50))+'%,'+(-(parY + 50)) +'%) scale(1)'
+          });
+          $(".circle").css({
+            'transform': 'translate('+(-(parX + 40))+'%,'+(-(parY + 50)) +'%) scale(1)'
+          });
+        })
+      }
+
+      setTimeout(function(){
+        if ($(window).width() < 600)
+        {
+          $('#eclogo').css({
+            'top' : '5%',
+            'transform': 'translate(-50%,-50%) scale(.4)'
+          });
+        } else {
+          $('#eclogo').css({
+          'top' : '10%',
+          'transform': 'translate(-50%,-50%) scale(.4)'
+        });
+        }
+      },500)
+
+    //hover effects
+    $(".arcs").hover(function() {
+      var sid = $(this).attr('sid');
+      $("#"+sid).css('opacity', '1');
+    }, function() {
+      var sid = $(this).attr('sid');
+      $("#"+sid).css('opacity', '0');
+    });
+    //The up arrow to events
+    $(".arcs").click(function() {
+      var sid = $(this).attr('sid');
+      var des = parseInt(sid.replace(/[^0-9\.]/g, ''), 10);
+      Reveal.slide( 2, des);
+      upactivate = 1;
+      $(".navigate-up").click(function() {
+          Reveal.slide( 2, 0);
+          upactivate = 0;
+        });
+    });
+    if (hors == 2 && upactivate == 0)
+      {
+        $(".navigate-up").off('click');
+      }
+  } else {
+    window.removeEventListener('deviceorientation', deviceOrientation);
+    $(".navigate-up").off('click');
+    setTimeout(function(){
+      if ($(window).width() < 600)
+      {
+        $('#eclogo').css({
+          'top' : '5%',
+          'transform': 'translate(-50%,-50%) scale(.4)'
+        });
+      } else {
+        $('#eclogo').css({
+          'top' : '10%',
+          'transform': 'translate(-50%,-50%) scale(.4)'
+        });
+      }
+    },500)
+    $("body").off('mousemove');
+    // The parallax
+      var count = 0;
+      $("body").mousemove(function( event ) {
+        if(count%3 != 0)
+        {
+          count++;
+          return 0;
+        }
+        count++;
+        var top  = $(window).scrollTop();
+        var parX = event.pageX/100;
+        var parY = event.pageY/100;
+        $("#eclogo").css({
+          'transform': 'translate('+(-(parX + 40))+'%,'+(-(parY + 45)) +'%) scale(.4)'
+        });
+      })
+  }
+} );
+// Function for full view
+function showevent(id) {
+  var visible = []
+  var desc = $("#desc"+ id).text();
+  var title = $("#title"+id).text();
+  var rules = $("#rules"+id).text();
+  var venue = $("#venue"+id).text();
+  var timing = $("#timing"+id).text();
+  var prizes = $("#prizes"+id).text();
+  var coordinators = $('#coordinators'+id).text();
+    var eventtype = $("#eventtype"+id).text();
+  var arrayOfTime = $("#timing"+id).text().split(' To ');
+  var months = ["January","Feburary","March","April","May","June","July","August","September","October","November","December"];
+  var d1 = new Date(parseInt(arrayOfTime[0]));
+  var d2 = new Date(parseInt(arrayOfTime[1]));
+  var main = "Date -"+" "+d1.getDate() + " "+months[d1.getMonth()] + "'18" +"  "+ "From "+((d1.getHours()>12)? d1.getHours()%12:d1.getHours())+":"+((d1.getMinutes()<10)? "0"+d1.getMinutes():d1.getMinutes())+((d1.getHours()>=12)? "PM":"AM") + " To "+((d2.getHours()>12)?d2.getHours()%12 : d2.getHours())+":"+((d2.getMinutes()<10)? "0"+d2.getMinutes():d2.getMinutes())+((d2.getHours()>=12)?"PM":"AM");
+
+var arrayOfCoordinators = coordinators.split("  ");
+console.log(arrayOfCoordinators);
+$(".myclass").css("visibility","hidden");
+if(arrayOfCoordinators[0].indexOf(" 0")<0) {
+  main1 = arrayOfCoordinators[0];
+  $(".myclass").css("visibility","visible");
+}
+else {
+  main1 = " ";
+}
+ 
+
+
+  main2 = arrayOfCoordinators[1];
+
+
+$("#register-btn").css("visibility","hidden");
+if( eventtype.length > 0) {
+
+
+      $("#register-btn").css("visibility","visible");
+}
+
+
+  $(".cat-act-desc").text(desc);
+  $(".cat-act-title").text(title);
+  $(".cat-act-rules").text(rules);
+  $(".cat-act-venue").text(venue);
+  $(".cat-act-timing").text(main);
+  //$(".cat-act-prizes").text(prizes);
+  $(".cat-act-coordinators1").text(main1);
+  $(".cat-act-coordinators2").text(main2);
+  
+  $("#register-btn").attr('onclick', "register_open('"+id+"')");
+  $(".cat-right").css({
+    'transform': 'translateY(-50%) scale(.9)',
+    'opacity': '0'
+  });
+  $(".e-wosh").css({
+    'opacity': '1',
+    'z-index': '10',
+    'transform': 'scale(1)'
+  });
+  $('.e-wosh *').each(function(i){
+      var t = $(this);
+      setTimeout(function(){ t.css({'transform': 'translate3d(0px, 0px, 0px)','opacity':'1'}); }, (i+1) * 50);
+  });
+}
+
+
+
+function register_open(id) {
+  closewosh();
+  $("#events-list").val(id);
+  Reveal.slide( 3, 0);
+}
+function closewosh() {
+  $(".cat-right").css({
+    'transform': 'translateY(-50%) scale(1)',
+    'opacity': '1'
+  });
+  $(".e-wosh").css({
+    'opacity': '0',
+    'transform': 'scale(1.1)'
+  });
+  setTimeout(function(){
+    $(".e-wosh").css('z-index', '-1');
+    $('.e-wosh *').css({'transform': 'translate3d(-10px, 0px, 0px)','opacity':'0'})
+  },350)
+}
+function openPdf(e,path) {
+    e = e || window.event;
+    e.preventDefault();
+    window.open(path,'ecpdf');
+
+
+}
+
+
+
+</script>
+<script>
+function myMap() {
+  var myCenter = new google.maps.LatLng(28.3671956,77.3156686);
+  var mapCanvas = document.getElementById("googleMap");
+  var mapOptions = {center: myCenter, zoom: 16};
+  var map = new google.maps.Map(mapCanvas, mapOptions);
+  var marker = new google.maps.Marker({position:myCenter});
+  marker.setMap(map);
+}
+$(document).ready(function(event) {
+$(".slider").slick({
+    dots: true,
+slidesToShow: 5,
+slidesToScroll: 1,
+cssEase: "ease",
+autoplay: true,
+autoplaySpeed: 3000,
+ responsive: [
+    {
+      breakpoint: 1080,
+      settings: {
+        slidesToShow: 5,
+        slidesToScroll: 1,
+        dots: true,
+        cssEase :"ease",
+        autoplay:true,
+        autoplaySpeed: 3000
+      }
+    },
+    {
+      breakpoint: 720,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2,
+         cssEase :"ease",
+        autoplay:true,
+        autoplaySpeed: 3000
+      }
+    }
+    ]
+});
+});
+</script>
+<script src="js/main.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC7rJmV_1a3RHlDEGThAFmyMIUdwOBVQJ8&callback=myMap"></script>
+<script src="js/responsive.js"></script>
+</html>
