@@ -85,10 +85,10 @@ $(function(){
   var afterhashi= window.location.hash.substr(1);
    var replaced = afterhashi.replace(/%20/g, " ");
    console.log(replaced);
-   if (afterhashi != "/home")
+   if (afterhashi != "/home" || replaced != "")
    {
-      Reveal.prev();
       Reveal.next();
+      Reveal.prev();
    }
   var afterhash=replaced.toUpperCase();
   console.log("type "+afterhash);
@@ -323,6 +323,8 @@ $(function(){
   .always(function() {
     console.log("complete");
   });
+
+  Reveal.configure({ history: true });
 })
 
 function displayFsCarousel() {
