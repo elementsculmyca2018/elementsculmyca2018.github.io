@@ -5,6 +5,7 @@ function register() {
           var email = $("#email").val().trim();
           var college = $("#college").val().trim();
           var eventid = $("#events-list").val().trim();
+          var eventname = document.getElementById("events-list").item(document.getElementById("events-list").selectedIndex).text;
           if(name=="" && phone=="" &&email=="" && college=="" &&eventid=="010")
           {
             alert("Please fill all fields properly");
@@ -43,11 +44,11 @@ function register() {
             alert("Please select an event");
             return 0;
           }
-          
+          console.log(name,phone,email,college,eventname);
           $.ajax({
             url: 'https://elementsculmyca2018.herokuapp.com/api/v1/events/register',
             type: 'POST',
-            data: {name: name, phone: phone, email: email, college: college, eventid: eventid},
+            data: {name: name, phone: phone, email: email, college: college, eventname: eventname},
           })
           .done(function(msg) {
             msg = JSON.parse(msg);
