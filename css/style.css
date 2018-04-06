@@ -1273,7 +1273,7 @@ a:link, a:visited, a:hover, a:active {
     font-size: 16px;
     margin: 4px 0px;
     padding: 4px 20px;
-    border: 1.5px solid white;
+    border: 0.8px solid black;
   }
 
   #reg-right{
