@@ -690,18 +690,24 @@ a:link, a:visited, a:hover, a:active {
 	margin: 5%;
  
 }
+
 #regform > input, select {
 	margin: 8px 0px;
 	border-radius: 20px;
 	padding: 4px 20px;
-	border: 2px solid white;
-	background-color:white;
+
+	border: 2px solid #323314;
 	min-width: 300px;
 	font-size: 16px;
 	color: black;
    font-weight: bold;
-	border-color:#323314; ;
+	
 
+}
+#events-list > option
+{
+	color: black;
+	background-color: #5050508f;
 }
 
 #register {
