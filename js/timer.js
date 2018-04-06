@@ -1,6 +1,6 @@
 
         
-var countDownDate = new Date("April 12, 2018 12:00:00").getTime();
+var countDownDate = new Date("April 12, 2018 10:00:00").getTime();
 
 // Update the count down every 1 second
 var x = setInterval(function() {
@@ -28,6 +28,6 @@ var x = setInterval(function() {
     // If the count down is over, write some text 
     if (remaining < 0) {
         clearInterval(x);
-        document.getElementById("pg").innerHTML = "PG EXPIRED";
+        document.getElementById("pg").innerHTML = "The fest is live.";
     }
 }, 1000);
