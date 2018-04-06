@@ -688,16 +688,20 @@ a:link, a:visited, a:hover, a:active {
 	text-align: left;
 	font-weight: bold;
 	margin: 5%;
+ 
 }
-
 #regform > input, select {
 	margin: 8px 0px;
 	border-radius: 20px;
 	padding: 4px 20px;
 	border: 2px solid white;
-	background-color: #5050508f;
+	background-color:white;
 	min-width: 300px;
 	font-size: 16px;
+	color: black;
+   font-weight: bold;
+	border-color:#323314; ;
+
 }
 
 #register {
