@@ -813,7 +813,7 @@ a:link, a:visited, a:hover, a:active {
 
 .team-card {
 	width: 200px;
-	height: 200px;
+	height: 208px;
 	overflow: visible;
 	font-size: 24px !important;
 	display: inline-block;
@@ -1411,7 +1411,7 @@ a:link, a:visited, a:hover, a:active {
 @media screen and (max-width: 460px){
   #team-div{
     padding-top: 35px !important;
-    height: 67%
+    height: 57%
   }
   
  
