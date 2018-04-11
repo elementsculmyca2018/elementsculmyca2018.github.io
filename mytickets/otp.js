@@ -9,7 +9,7 @@
 
 		function showMyTickets(phone) {
 			
-			var url = 'https:elementsculmyca2018.herokuapp.com/api/v1/events/gettickets/'+ phone;
+			var url = 'https://elementsculmyca2018.herokuapp.com/api/v1/events/gettickets/'+ phone;
 			console.log(url);
 
 				
