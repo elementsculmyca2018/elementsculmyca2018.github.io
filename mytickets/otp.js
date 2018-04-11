@@ -14,7 +14,7 @@
 
 				
 			 $.ajax({
-            url: 'https://elementsculmyca2018.herokuapp.com/api/v1/events/gettickets/'+ phone,
+            url: 'https:elementsculmyca2018.herokuapp.com/api/v1/events/gettickets/'+ phone,
             type: 'GET',
             
           })
