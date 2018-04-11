@@ -26,17 +26,18 @@
   opacity: 1;
 }
 .card:hover {
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.73);
 }
 .container {
     padding: 2px 16px;
+
 }
 .card {
     text-align: center;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.6);
     transition: 0.3s;
     width: 25%;
-    height: 35%;
+    height: 45%;
     border-radius: 5px;
     display: inline-block;
   margin: 3% !important ;
@@ -89,7 +90,7 @@ margin: 10px;
   background: #3897f0;
   border:1px solid #3897f0;
   color:#fff;
-  border-radius:3px;
+  border-radius:15px;
   font-weight:600;
   font-size: 14px;
   height: 28px;
@@ -143,13 +144,15 @@ margin: 10px;
 
  
    .card{
-    width: 70% !important;
+    width: 72% !important;
     padding-bottom : 50px;
+    height: 35%;
   }
 #logoutbtn {
   position: absolute;
-  top: 10%;
-  left: 8%;
+  top: 14%;
+  left:70%;
+  margin: 3px;
 }
 h1 {
   margin :15px;
@@ -161,7 +164,7 @@ h1 {
 	<center>
 		<img src="../images/logox (2).png" width="10%"><br/>
 		<h3>This is the e-ticket system for Elements Culmyca '18.<br/></h3>
-		<h4>This site has been made as simple as possible so as to manage traffic and slow Internet issues on fest days.
+		<h4 id="h4">This site has been made as simple as possible so as to manage traffic and slow Internet issues on fest days.
 		</h4>
 <button onclick="logout()" id="logoutbtn" style="display: none;font-size: 18px;background-color: #008CBA;">Log Out</button>
 </center>

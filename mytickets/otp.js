@@ -27,7 +27,7 @@
             	for(i =0; i < msg.data.length;i++) {
             		
 
-            	getEventdate1(msg.data[i].eventname,msg.data[i].qrcode,msg.data[i].arrived);
+            	getEventdate1(msg.data[i].eventname,msg.data[i].qrcode,msg.data[i].arrived,msg.data[i].paymentstatus);
      
             	
 
@@ -40,7 +40,7 @@
 
 		}
 
-		function getEventdate1(eventname,qrcode,arrivalstatus) {
+		function getEventdate1(eventname,qrcode,arrivalstatus,payment) {
 
 			 $.ajax({
 		
@@ -50,10 +50,14 @@
           .done(function(msg) {
             msg = JSON.parse(msg);
             console.log(eventname);
-
+            console.log(payment);
+           
             if (msg.success ==  1)
             {
-             	
+             	 var s;
+            if(payment==1)
+              s="PAID";
+          else s="PENDING";
                for(i=0;i<msg.data.length;i++) {
               		
                	if(msg.data[i].title == eventname) {
@@ -64,14 +68,14 @@
             if ( arrivalstatus == "0" ) {
         		$(".myTickets").append(
                 '<div class="card">'+'<img src="https://api.qrserver.com/v1/create-qr-code/?data='+qrcode+'&amp;size=70x70">'
-              +'<div class="container">'+'<p>'+eventname+'</p>' +'<p>'+'April '+d2.getDate()+','+'2018 '+'</p>'+'<p>' +((d2.getHours()>12)? d2.getHours()%12:d2.getHours())+":"+((d2.getMinutes()<10)? '0'+d2.getMinutes():d2.getMinutes())+((d2.getHours()>=12)? 'PM':'AM') + '<p>'+'Rs.'+ fees +'</p>'+'</div>'+'</div>'
+              +'<div class="container">'+'<p>'+eventname+'</p>' +'<p>'+'April '+d2.getDate()+','+'2018 '+'</p>'+'<p>' +((d2.getHours()>12)? d2.getHours()%12:d2.getHours())+":"+((d2.getMinutes()<10)? '0'+d2.getMinutes():d2.getMinutes())+((d2.getHours()>=12)? 'PM':'AM') + '<p>'+'Rs.'+ fees +'</p>'+ '<p>'+'STATUS : '+ s +'</p>'+'</div>'+'</div>'
 
               );
           }
            else {
               $(".myTickets").append(
                 '<div class="card">'+'<img src="qr.jpg">'
-              +'<div class="container">'+'<p>'+eventname+'</p>' +'<p>'+'April '+d2.getDate()+','+'2018 '+'</p>'+'<p>' +((d2.getHours()>12)? d2.getHours()%12:d2.getHours())+":"+((d2.getMinutes()<10)? '0'+d2.getMinutes():d2.getMinutes())+((d2.getHours()>=12)? 'PM':'AM') + '<p>'+'Rs.'+ fees +'</p>'+'</div>'+'</div>'
+              +'<div class="container">'+'<p>'+eventname+'</p>' +'<p>'+'April '+d2.getDate()+','+'2018 '+'</p>'+'<p>' +((d2.getHours()>12)? d2.getHours()%12:d2.getHours())+":"+((d2.getMinutes()<10)? '0'+d2.getMinutes():d2.getMinutes())+((d2.getHours()>=12)? 'PM':'AM') + '<p>'+'Rs.'+ fees +'</p>'+ '<p>'+'STATUS : '+ s +'</p>'+'</div>'+'</div>'
 
               );
 
