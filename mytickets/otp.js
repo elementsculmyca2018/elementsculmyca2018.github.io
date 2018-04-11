@@ -9,12 +9,12 @@
 
 		function showMyTickets(phone) {
 			
-			
-			
+			var url = 'https:elementsculmyca2018.herokuapp.com/api/v1/events/gettickets/'+ phone;
+			console.log(url);
 
 				
 			 $.ajax({
-            url: 'https:elementsculmyca2018.herokuapp.com/api/v1/events/gettickets/'+ phone,
+            url:  url,
             type: 'GET',
             
           })
